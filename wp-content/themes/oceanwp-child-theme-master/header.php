@@ -56,7 +56,7 @@ $lien=get_field('lien_google_maps', 161)['url'];
 	<div class="popup-salon">
 		<div class="popup-header">
 			<h3><?php echo $titre; ?> </h3>
-			<span class="popup-close"><i class="fa fa-times"></i></span>
+			<span class="popup-close" id="popup-close"><i class="fa fa-times"></i></span>
 		</div>
 		<?php echo $description; ?>
 		<div class="popup-details">
@@ -78,11 +78,4 @@ $lien=get_field('lien_google_maps', 161)['url'];
 	</div>
 </div>
 
-<!-- Code pour fermer la popup -->
 
-<script>
-	console.log('hey');
-$('.popup-close').click(function(){
-	$(this).parent().hide();
-})
-</script>
