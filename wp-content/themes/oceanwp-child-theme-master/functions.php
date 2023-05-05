@@ -29,6 +29,17 @@ function oceanwp_child_enqueue_parent_style() {
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
 
+/**
+ * Load script
+ */
+function oceanwp_child_script() {
+	wp_enqueue_script( 'oceanwp_child_script', get_stylesheet_directory_uri() . '/scripts/script.js', array('jquery'), false, true );
+}
+add_action( 'wp_enqueue_scripts', 'oceanwp_child_script' );
+
+/**
+ * Use wp_nav_menu_items hook to add contact button in menu navigation
+ */
 function contact_btn( $items, $args ) {
 	$items .= '<a href="/contact" class="contact-btn">Nous contacter</a>';
 	return $items;
