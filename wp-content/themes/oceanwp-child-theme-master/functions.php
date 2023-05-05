@@ -41,7 +41,7 @@ add_action( 'wp_enqueue_scripts', 'oceanwp_child_script' );
  * Use wp_nav_menu_items hook to add contact button in menu navigation
  */
 function contact_btn( $items, $args ) {
-	$items .= '<a href="/contact" class="contact-btn">Nous contacter</a>';
+	$items .= '<a href="/med_it/contact" class="contact-btn">Nous contacter</a>';
 	return $items;
 }
 

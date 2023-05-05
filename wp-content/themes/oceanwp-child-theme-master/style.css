@@ -10,6 +10,14 @@ Version: 1.0
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
+#site-navigation-wrap .dropdown-menu, #footer-bottom #footer-bottom-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+#footer-bottom #footer-bottom-menu a:hover {
+    color: black !important;
+}
 
 .contact-btn{
     display:inline-block;
@@ -17,6 +25,11 @@ Version: 1.0
     padding:6px 16px;
     border-radius:6px;
 }
+
+.contact-btn:hover{
+    color: rgb(40,186,191);
+}
+
 .popup-overlay{
     position:fixed;
     width:100%;
