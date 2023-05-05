@@ -49,7 +49,7 @@ $titre=get_field('titre', 161);
 $description=get_field('description', 161);
 $lieu=get_field('lieu', 161);
 $date=get_field('date', 161);
-$lien=get_field('lien_google_maps', 161);
+$lien=get_field('lien_google_maps', 161)['url'];
 ?>
 
 <div class="popup-overlay">
